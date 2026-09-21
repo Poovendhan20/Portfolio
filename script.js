@@ -1,0 +1,2 @@
+const nav=document.querySelector('.nav');const menu=document.querySelector('.menu-btn');menu.addEventListener('click',()=>nav.classList.toggle('menu-open'));document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('menu-open')));
+const videos=document.querySelectorAll('video');const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.setAttribute('preload','metadata')}}),{rootMargin:'200px'});videos.forEach(v=>observer.observe(v));
