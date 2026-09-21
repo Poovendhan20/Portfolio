@@ -3,163 +3,167 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Poovendhan R — Full-Stack Developer, AI/ML enthusiast and UI/UX & 3D designer." />
-  <meta name="theme-color" content="#070b17" />
-  <title>Poovendhan R | Full-Stack Developer</title>
+  <meta name="description" content="Poovendhan R — Full-Stack Developer, UI/UX Designer and 3D Creative." />
+  <meta name="theme-color" content="#f4f0e7" />
+  <title>Poovendhan R — Full-Stack Developer & Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="glow glow-1"></div><div class="glow glow-2"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
 
-  <header class="nav-wrap">
+  <header class="site-header">
     <nav class="nav container">
-      <a class="brand" href="#home"><span class="brand-mark">PR</span><span>Poovendhan<span class="dot">.</span></span></a>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <a class="logo" href="#home" aria-label="Poovendhan home"><span>PR</span><i></i></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#design">Design</a><a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#motion">3D Work</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
       </div>
-      <a class="nav-cta" href="assets/Poovendhan_Resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a>
+      <a class="nav-cta magnetic" href="assets/Poovendhan_Resume.pdf" target="_blank" rel="noreferrer">Resume <span>↗</span></a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero container">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status"></span> MCA Student · Full-Stack Developer</div>
-        <h1>Building <span>useful</span> products<br/>with code, AI & design.</h1>
-        <p class="hero-text">I’m Poovendhan R — an MCA student and full-stack developer working with Python, React, Flask, SQL and AI/ML. I also bring a strong UI/UX and 3D animation background to product development.</p>
-        <div class="hero-actions"><a class="btn primary" href="#projects">Explore my work <span>↓</span></a><a class="btn ghost" href="https://github.com/Poovendhan20/Poovendhan20" target="_blank" rel="noreferrer">GitHub ↗</a></div>
-        <div class="hero-stats"><div><strong>03+</strong><span>Featured projects</span></div><div><strong>02</strong><span>Core stacks</span></div><div><strong>2027</strong><span>MCA graduation</span></div></div>
-      </div>
-      <div class="hero-card">
-        <div class="code-top"><span></span><span></span><span></span><small>poovendhan.py</small></div>
-        <pre><code><b>class</b> Developer:
-    name = <i>"Poovendhan R"</i>
-    role = <i>"Full-Stack Engineer"</i>
+    <section id="home" class="hero">
+      <div class="hero-shape" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span>BUILD</span><b>•</b><span>DESIGN</span><b>•</b><span>CREATE</span></p>
+          <h1>POOVENDHAN R</h1>
+          <h2>I build <em>digital</em><br>experiences.</h2>
+          <p class="hero-role">FULL-STACK DEVELOPER &nbsp;|&nbsp; UI/UX DESIGNER &nbsp;|&nbsp; 3D CREATIVE</p>
+          <p class="hero-text">Turning ideas into interactive, meaningful and beautiful digital experiences — from responsive web products to thoughtful interfaces and 3D visuals.</p>
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="#projects">View My Work <span>→</span></a>
+            <a class="resume-link" href="assets/Poovendhan_Resume.pdf" target="_blank" rel="noreferrer">Download Resume <span>↓</span></a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Poovendhan20/Portfolio" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+            <a href="https://www.linkedin.com/in/poovendhan-r4904" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="mailto:poovendhan931@gmail.com" aria-label="Email">@</a>
+          </div>
+        </div>
 
-    <b>def</b> build(self):
-        skills = [
-          <i>"Python"</i>, <i>"React"</i>,
-          <i>"Flask"</i>, <i>"SQL"</i>,
-          <i>"AI/ML"</i>
-        ]
-        <b>return</b> skills</code></pre>
-        <div class="mini-orbit"><span>AI</span><span>React</span><span>API</span><span>SQL</span></div>
-      </div>
-    </section>
-
-    <section id="about" class="section container">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="about-grid">
-        <div><h2>Engineer mindset.<br/><span>Designer eye.</span></h2></div>
-        <div class="about-copy"><p>I’m pursuing a Master of Computer Applications at SRM Institute of Science and Technology (2025–2027), after completing my BCA at Bharath Institute of Higher Education and Research (2021–2024).</p><p>My focus is end-to-end product development: creating responsive interfaces, building backend APIs, working with data, and applying AI to practical learning experiences.</p><div class="chips"><span>Problem Solving</span><span>Product Thinking</span><span>Responsive UI</span><span>AI Applications</span><span>3D Design</span></div></div>
-      </div>
-    </section>
-    <section id="skills" class="section container">
-      <div class="section-label">02 / TOOLKIT</div><h2>Technical <span>skills</span></h2>
-      <div class="skill-grid">
-        <article><b>01</b><h3>Programming</h3><p>Python · Java · JavaScript · SQL</p></article>
-        <article><b>02</b><h3>Frontend</h3><p>React · HTML5 · CSS3 · Bootstrap · Responsive Web Design</p></article>
-        <article><b>03</b><h3>Backend</h3><p>Flask · REST API Development</p></article>
-        <article><b>04</b><h3>Data & AI</h3><p>Pandas · Scikit-learn · Streamlit · Tableau · Machine Learning · Regression · Model Evaluation</p></article>
-        <article><b>05</b><h3>Databases</h3><p>SQL · Relational Database Concepts</p></article>
-        <article><b>06</b><h3>Tools</h3><p>Git · GitHub · MS Excel · VS Code · Blender</p></article>
-      </div>
-    </section>
-    <section id="projects" class="section container">
-      <div class="section-label">03 / FEATURED WORK</div><h2>Projects that <span>solve problems.</span></h2>
-      <article class="project-feature">
-        <div class="project-image"><img src="assets/img/ai-knowledge-dna.png" alt="AI Knowledge DNA UI/UX screens" loading="lazy"><div class="image-badge">Flagship Project</div></div>
-        <div class="project-info"><div class="project-no">01</div><h3>AI Knowledge DNA</h3><p class="project-sub">Intelligent Personalized Learning Assistant</p><p>AI-powered learning concept focused on analyzing a student's understanding and delivering personalized learning support. The product experience includes dashboard, upload, AI assistant, quiz, study planner, mind map, voice assistant and profile flows.</p><ul><li>React frontend + Flask backend architecture</li><li>AI-oriented learning workflows</li><li>Planned OCR-based note processing and multilingual learning</li><li>AI-generated mind maps, knowledge graphs and personalized study plans</li></ul><div class="tags"><span>React</span><span>Flask</span><span>Python</span><span>AI/ML</span></div></div>
-      </article>
-      <div class="project-grid">
-        <article class="project-card"><span class="project-no">02</span><h3>StudyBuddy</h3><p>Responsive AI-powered learning platform built with a mobile-first interface. Includes authentication, shopping cart functionality and real-time inventory updates.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div><a href="https://github.com/Poovendhan20/Poovendhan20" target="_blank" rel="noreferrer">View GitHub ↗</a></article>
-        <article class="project-card"><span class="project-no">03</span><h3>Chocolate Sales Dashboard</h3><p>Interactive sales analysis and performance dashboard using Tableau, Excel and SQL, with country comparisons and seasonal trend analysis.</p><div class="metric"><strong>$280K</strong><span>untapped revenue opportunities identified</span></div><div class="tags"><span>Tableau</span><span>Excel</span><span>SQL</span></div><a href="https://github.com/Poovendhan20/Poovendhan20" target="_blank" rel="noreferrer">View GitHub ↗</a></article>
-        <!-- LIVEPOLL PROJECT -->
-<article class="project-card livepoll-project">
-    <div class="project-number">
-        02
-    </div>
-    <div class="livepoll-image">
-        <img
-            src="assets/img/live_poll.png"
-            alt="LivePoll real-time polling application" />
-        <div class="livepoll-overlay">
-            <span>LIVE PROJECT</span>
+        <div class="hero-visual reveal delay-1">
+          <div class="hero-photo-frame">
+            <img src="assets/img/live_poll.png" alt="LivePoll project interface preview">
+            <div class="hero-note note-one">Good ideas<br>build better.</div>
+            <div class="hero-note note-two">DESIGN<br>DEVELOP<br>ANIMATE<br>REPEAT</div>
+            <div class="hero-label">SELECTED WORK / 2026</div>
+          </div>
+          <div class="scroll-cue">SCROLL <span>↓</span></div>
         </div>
-    </div>
-    <div class="project-content">
-        <div class="project-badge">
-            Full Stack
-        </div>
-        <h3>
-            LivePoll
-        </h3>
-        <p class="project-subtitle">
-            Interactive Polls. Real-Time Results.
-        </p>
-        <p>
-            A real-time polling platform that allows users
-            to create polls, share them instantly, collect
-            votes and watch results update live.
-        </p>
-        <div class="tags">
-            <span>React</span>
-            <span>Vite</span>
-            <span>Go</span>
-            <span>WebSocket</span>
-            <span>REST API</span>
-            <span>PostgreSQL</span>
-            <span>Vercel</span>
-            <span>Render</span>
-        </div>
-        <div class="project-actions">
-            <a
-                href="https://live-polling-c3vk3w386-poovendhan20.vercel.app/login"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-demo"
-            >
-                Live Demo
-                <span>↗</span>
-            </a>
-        </div>
-    </div>
-</article>
-      </div>
-    </section>
-    <section id="design" class="section container">
-      <div class="section-label">04 / DESIGN & 3D</div><div class="design-head"><h2>Beyond code, I <span>design.</span></h2><p>Freelance 3D animation work for small-business marketing and product showcases, created using Blender.</p></div>
-      <div class="video-grid">
-        <article class="video-card"><video controls preload="metadata" muted playsinline><source src="assets/videos/basic-animation.mp4" type="video/mp4"></video><h3>Product Animation</h3><p>3D product showcase</p></article>
-        <article class="video-card"><video controls preload="metadata" muted playsinline><source src="assets/videos/lofi-factory-animation.mp4" type="video/mp4"></video><h3>Lofi Factory</h3><p>3D environment animation</p></article>
-        <article class="video-card"><video controls preload="metadata" muted playsinline><source src="assets/videos/lotion-animation.mp4" type="video/mp4"></video><h3>Lotion Animation</h3><p>Product-focused animation</p></article>
-        <article class="video-card"><video controls preload="metadata" muted playsinline><source src="assets/videos/mobile-phone-animation.mp4" type="video/mp4"></video><h3>Mobile Phone</h3><p>3D product animation</p></article>
-        <article class="video-card"><video controls preload="metadata" muted playsinline><source src="assets/videos/train-animation.mp4" type="video/mp4"></video><h3>Train Animation</h3><p>3D motion study</p></article>
-        <article class="video-card"><video controls preload="metadata" muted playsinline><source src="assets/videos/water-bottle-animation.mp4" type="video/mp4"></video><h3>Water Bottle</h3><p>Product visualization</p></article>
       </div>
     </section>
 
-    <section class="section container journey">
-      <div class="section-label">05 / EXPERIENCE & EDUCATION</div>
-      <div class="timeline">
-        <div><span>2025 — 2027</span><h3>Master of Computer Applications</h3><p>SRM Institute of Science and Technology</p></div>
-        <div><span>2021 — 2024</span><h3>Bachelor of Computer Applications</h3><p>Bharath Institute of Higher Education and Research</p></div>
-        <div><span>2023 — 2025</span><h3>Technical Seminars</h3><p>Delivered seminars on Machine Learning, Cloud Computing and Computer Vision.</p></div>
-        <div><span>Ongoing</span><h3>Freelance 3D Animation</h3><p>Created Blender-based animation projects for small-business marketing and product showcases.</p></div>
+    <section id="about" class="about section">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <div class="portrait-placeholder">
+            <span>PR</span>
+            <small>CREATIVE<br>DEVELOPER</small>
+          </div>
+        </div>
+        <div class="about-copy reveal delay-1">
+          <p class="section-kicker">01. ABOUT ME</p>
+          <h2>A developer<br>who thinks like<br><em>a designer.</em></h2>
+          <p>I'm Poovendhan R, an MCA student and Full-Stack Developer who enjoys turning ideas into useful products. I combine development, interaction design and visual creativity to make digital experiences feel clear and intentional.</p>
+          <p>My work spans React, Python, Flask, SQL, responsive UI, product thinking and 3D animation.</p>
+          <p class="signature">Same person.<br><em>Different perspectives.</em></p>
+        </div>
+        <div class="about-points reveal delay-2">
+          <div><span class="round-icon">&lt;/&gt;</span><strong>Build</strong><p>Web applications that solve real problems.</p></div>
+          <div><span class="round-icon">✎</span><strong>Design</strong><p>User experiences that feel natural.</p></div>
+          <div><span class="round-icon">◇</span><strong>Create</strong><p>3D visuals and animations that bring ideas to life.</p></div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="contact container">
-      <div class="contact-box"><div><div class="section-label">06 / CONTACT</div><h2>Let’s build something<br/><span>useful together.</span></h2><p>Open to full-stack engineering opportunities, product development and AI-focused projects.</p></div><div class="contact-links"><a href="mailto:poovendhan931@gmail.com">poovendhan931@gmail.com ↗</a><a href="https://github.com/Poovendhan20/Poovendhan20" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/poovendhan-r4904" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="assets/Poovendhan_Resume.pdf" target="_blank" rel="noreferrer">View Resume ↗</a></div></div>
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">02. FEATURED PROJECTS</p><h2>Selected <em>work.</em></h2></div>
+          <span class="heading-number">02 / 03</span>
+        </div>
+
+        <article class="project-card project-large reveal">
+          <div class="project-media"><img src="assets/img/live_poll.png" alt="LivePoll application dashboard"></div>
+          <div class="project-info">
+            <p class="project-index">01</p>
+            <div><h3>LivePoll</h3><p>Interactive real-time polling platform for creating, sharing and viewing live results.</p></div>
+            <div class="project-meta"><span>FULL-STACK</span><span>REAL-TIME</span><span>WEB APP</span></div>
+            <a href="https://live-polling-c3vk3w386-poovendhan20.vercel.app/login" target="_blank" rel="noreferrer" class="circle-arrow" aria-label="Open LivePoll">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-split reveal">
+          <div class="project-info">
+            <p class="project-index">02</p>
+            <div><h3>AI Knowledge DNA</h3><p>Personalized learning assistant concept focused on understanding, study planning and intelligent learning experiences.</p></div>
+            <div class="project-meta"><span>REACT</span><span>FLASK</span><span>AI / ML</span></div>
+          </div>
+          <div class="project-media"><img src="assets/img/ai-knowledge-dna.png" alt="AI Knowledge DNA interface design"></div>
+        </article>
+
+        <article class="project-card project-minimal reveal">
+          <div class="minimal-number">03</div>
+          <div><p class="project-index">03</p><h3>StudyBuddy</h3><p>Responsive student-focused web experience designed around simple learning flows, usability and clear visual hierarchy.</p></div>
+          <a href="#contact" class="circle-arrow">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section">
+      <div class="container skills-grid">
+        <div class="reveal"><p class="section-kicker">03. SKILLS</p><h2>Technologies<br>I work <em>with.</em></h2></div>
+        <div class="skill-pills reveal delay-1">
+          <span>Python</span><span>JavaScript</span><span>React</span><span>HTML/CSS</span><span>Flask</span><span>SQL</span><span>UI/UX</span><span>Figma</span><span>Blender</span><span>Git & GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="motion" class="motion section">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="section-kicker">04. 3D ANIMATIONS</p><h2>Bringing ideas <em>to life.</em></h2></div><span class="heading-link">VIEW ALL →</span></div>
+        <div class="motion-grid">
+          <figure class="motion-item reveal"><div><video muted loop playsinline preload="metadata"><source src="assets/videos/water-bottle-animation.mp4" type="video/mp4"></video><span class="play">▶</span></div><figcaption>Water Bottle</figcaption></figure>
+          <figure class="motion-item reveal delay-1"><div><video muted loop playsinline preload="metadata"><source src="assets/videos/mobile-phone-animation.mp4" type="video/mp4"></video><span class="play">▶</span></div><figcaption>Mobile Phone</figcaption></figure>
+          <figure class="motion-item reveal delay-2"><div><video muted loop playsinline preload="metadata"><source src="assets/videos/train-animation.mp4" type="video/mp4"></video><span class="play">▶</span></div><figcaption>Train</figcaption></figure>
+          <figure class="motion-item reveal"><div><video muted loop playsinline preload="metadata"><source src="assets/videos/lotion-animation.mp4" type="video/mp4"></video><span class="play">▶</span></div><figcaption>Lotion</figcaption></figure>
+          <figure class="motion-item reveal delay-1"><div><video muted loop playsinline preload="metadata"><source src="assets/videos/lofi-factory-animation.mp4" type="video/mp4"></video><span class="play">▶</span></div><figcaption>Lofi Factory</figcaption></figure>
+          <figure class="motion-item reveal delay-2"><div><video muted loop playsinline preload="metadata"><source src="assets/videos/basic-animation.mp4" type="video/mp4"></video><span class="play">▶</span></div><figcaption>Basic Animation</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="certificates section">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="section-kicker">05. CERTIFICATIONS</p><h2>Continuous <em>learning.</em></h2></div><span class="heading-link">03 CREDENTIALS</span></div>
+        <div class="certificate-grid">
+          <article class="certificate-card reveal"><div class="certificate-thumb"><img src="assets/img/generative-ai-imaging.png" alt="Generative AI Imaging certificate"></div><div class="certificate-body"><span class="platform">in &nbsp; LinkedIn Learning</span><h3>Generative AI Imaging</h3><p>AI & Design · Sep 07, 2025</p></div></article>
+          <article class="certificate-card reveal delay-1"><div class="certificate-thumb"><img src="assets/img/prompt-engineering.png" alt="Prompt Engineering certificate"></div><div class="certificate-body"><span class="platform">in &nbsp; LinkedIn Learning</span><h3>Prompt Engineering</h3><p>Generative AI · Sep 09, 2025</p></div></article>
+          <article class="certificate-card reveal delay-2"><div class="certificate-thumb"><img src="assets/img/html-css.png" alt="Learn HTML and CSS certificate"></div><div class="certificate-body"><span class="platform coursera">C &nbsp; Coursera</span><h3>Learn HTML & CSS</h3><p>Web Development · Sep 06, 2025</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-box reveal">
+        <div><p class="section-kicker">06. LET'S CONNECT</p><h2>Let's create<br>something <em>good.</em></h2><p>I'm always open to new opportunities, interesting collaborations and creative ideas.</p></div>
+        <div class="contact-side"><a class="button button-dark magnetic" href="mailto:poovendhan931@gmail.com">Get In Touch <span>→</span></a><div class="contact-socials"><a href="https://github.com/Poovendhan20/Portfolio" target="_blank" rel="noreferrer">GH</a><a href="https://www.linkedin.com/in/poovendhan-r4904" target="_blank" rel="noreferrer">in</a><a href="mailto:poovendhan931@gmail.com">@</a></div></div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer container"><span>© 2026 Poovendhan R</span><span></span></footer>
+  <footer class="footer"><div class="container footer-inner"><div><strong>POOVENDHAN R</strong><span>Full-Stack Developer | UI/UX Designer | 3D Creative</span></div><div class="footer-nav"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#motion">3D Work</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></div><div class="footer-copy">© 2026 Poovendhan R.<br>Built with passion.</div></div></footer>
+
   <script src="script.js"></script>
 </body>
 </html>
