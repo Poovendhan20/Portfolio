@@ -354,18 +354,13 @@ button {
 .hero-photo-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 0.82 / 1;
+  aspect-ratio: 0.84 / 1;
   max-height: 680px;
   margin: 0 auto;
-
   overflow: hidden;
-  background: #c8c5b8;
-
-  border-top-left-radius: 48% 34%;
-  border-bottom-left-radius: 8%;
-  border-bottom-right-radius: 4%;
-
-  box-shadow: 0 24px 70px rgba(18, 60, 58, 0.1);
+  background: #dcd8cc;
+  border-radius: 46% 46% 10% 10%;
+  box-shadow: 0 24px 70px rgba(18, 60, 58, 0.10);
   isolation: isolate;
 }
 
@@ -374,14 +369,12 @@ button {
   height: 100%;
   max-width: 100%;
   max-height: 100%;
-
   object-fit: contain;
   object-position: center bottom;
-
+  display: block;
   position: relative;
   z-index: 1;
-
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 .hero-photo-frame::after {
@@ -390,51 +383,11 @@ button {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.05),
-    rgba(18, 60, 58, 0.14)
+    rgba(255, 255, 255, 0.04),
+    rgba(18, 60, 58, 0.05)
   );
   pointer-events: none;
   z-index: 2;
-}
-
-.hero-note {
-  position: absolute;
-  background: rgba(244, 240, 231, 0.92);
-  color: var(--ink);
-  z-index: 3;
-  box-shadow: 0 12px 35px rgba(18, 60, 58, 0.12);
-}
-
-.note-one {
-  right: 8%;
-  top: 7%;
-  padding: 14px 17px;
-  font-family: var(--serif);
-  font-size: 18px;
-  line-height: 1.1;
-  transform: rotate(-4deg);
-}
-
-.note-two {
-  left: 8%;
-  bottom: 10%;
-  padding: 12px 18px;
-  font-family: var(--mono);
-  font-size: 9px;
-  line-height: 1.6;
-  letter-spacing: 1px;
-  transform: rotate(2deg);
-}
-
-.hero-label {
-  position: absolute;
-  bottom: 18px;
-  right: 20px;
-  color: #fff;
-  font-family: var(--mono);
-  font-size: 8px;
-  letter-spacing: 2px;
-  z-index: 3;
 }
 
 .scroll-cue {
@@ -1324,17 +1277,6 @@ button {
     object-position: center bottom;
   }
 
-  .note-one {
-    right: 3%;
-    top: 5%;
-    font-size: 14px;
-  }
-
-  .note-two {
-    left: 3%;
-    bottom: 6%;
-  }
-
   .about-grid,
   .skills-grid {
     grid-template-columns: 1fr;
@@ -1442,10 +1384,6 @@ button {
     aspect-ratio: 0.82 / 1;
   }
 
-  .hero-note {
-    transform: scale(0.85);
-  }
-
   .about-portrait {
     aspect-ratio: 0.9 / 1;
   }
@@ -1496,5 +1434,42 @@ button {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ================================
+   FINAL PORTRAIT POLISH
+   ================================ */
+
+.hero-photo-frame {
+  border-radius: 46% 46% 10% 10%;
+}
+
+@media (max-width: 1000px) {
+  .hero-photo-frame {
+    width: min(520px, 100%);
+    aspect-ratio: 0.86 / 1;
+    border-radius: 44% 44% 9% 9%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-photo-frame {
+    width: 100%;
+    max-height: none;
+    aspect-ratio: 0.84 / 1;
+    border-radius: 38% 38% 8% 8%;
+  }
+
+  .hero-photo-frame img {
+    object-fit: contain;
+    object-position: center bottom;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-photo-frame {
+    aspect-ratio: 0.82 / 1;
+    border-radius: 34% 34% 7% 7%;
   }
 }
